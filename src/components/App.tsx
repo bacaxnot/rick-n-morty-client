@@ -1,14 +1,12 @@
-import { useState } from 'react'
+import Header from '@components/Header'
 import '@styles/App.sass'
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      Hello World
-    </div>
-  )
+    return (
+        <div className="App">
+            <Header></Header>
+        </div>
+    )
 }
 
 export default App

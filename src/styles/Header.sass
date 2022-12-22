@@ -1,6 +1,7 @@
 @import './_vars'
 .navbar
     display: flex
+    gap: 10px
     justify-items: center
     align-items: center
     height: $navbar-height
@@ -11,8 +12,9 @@
         display: flex
         justify-content: center
         align-items: center
-        width: $navbar-logo-size
-        height: $navbar-logo-size
+        width: $navbar-height
+        height: $navbar-height
+        padding: ($navbar-height - $navbar-logo-size)/2
     .app-title
         position: relative
         width: 21rem

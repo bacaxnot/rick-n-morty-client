@@ -1,0 +1,30 @@
+@import './_vars'
+.navbar
+    display: flex
+    justify-items: center
+    align-items: center
+    height: $navbar-height
+    width: 100%
+    background-color: $app-header-color
+    color: $app-header-text-color
+    .app-logo
+        display: flex
+        justify-content: center
+        align-items: center
+        width: $navbar-logo-size
+        height: $navbar-logo-size
+    .app-title
+        position: relative
+        width: 21rem
+        height: 6rem
+        font-size: 4rem
+        span:first-child
+            position: absolute
+            top: 0
+            left: 0
+            font-size: 1em
+        span:last-child
+            position: absolute
+            bottom: 0
+            right: 0
+            font-size: 0.5em

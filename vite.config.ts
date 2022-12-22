@@ -8,7 +8,7 @@ export default defineConfig({
         alias: [
             {
                 find: '@assets',
-                replacement: path.resolve(__dirname, 'src/assets'),
+                replacement: path.resolve(__dirname, '/src/assets'),
             },
             {
                 find: '@interfaces',
@@ -41,4 +41,7 @@ export default defineConfig({
         ],
     },
     plugins: [react()],
+    test: {
+        globals: true,
+    },
 })

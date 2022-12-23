@@ -28,6 +28,7 @@
             "@config/*": ["src/config/*"],
             "@components": ["src/components/index"],
             "@components/*": ["src/components/*"],
+            "@views/*": ["src/views/*"],
             "@styles/*": ["src/styles/*"],
             "@assets/*": ["src/assets/*"],
             "@hooks/*": ["src/hooks/*"]

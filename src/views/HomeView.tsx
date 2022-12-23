@@ -1,9 +1,8 @@
 import { ICharacter } from '@interfaces'
 import React from 'react'
-import CharacterCard from './CharacterCard'
-import '@styles/HomeView.sass'
 import { useFetchCharacters } from '@hooks/useFetchCharacters'
-import Header from './Header'
+import CharacterCard from '@components/CharacterCard'
+import '@styles/HomeView.sass'
 
 const HomeView = () => {
     const characters = useFetchCharacters(1, 50)

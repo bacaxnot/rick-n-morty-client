@@ -1,6 +1,7 @@
 import logo from '@assets/app-logo.svg'
 import '@styles/Header.sass'
 import StatusIndicator from './StatusIndicator'
+import { Link } from 'react-router-dom'
 
 /**
  * Gobal header component of the application. When clicking the logo, should return to '/' route.
@@ -10,9 +11,9 @@ import StatusIndicator from './StatusIndicator'
 const Header = () => {
     return (
         <header className="navbar">
-            <figure className="app-logo">
+            <Link to="/" className="app-logo">
                 <img src={logo} alt="app-logo" />
-            </figure>
+            </Link>
             <h1 className="app-title">
                 <span>Wubba Lubba</span>
                 <span>Dub-Dub</span>

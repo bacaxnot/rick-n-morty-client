@@ -1,0 +1,22 @@
+@import './_vars'
+$sections-separation: 10px
+.character-view
+    width: 100%
+    padding: $app-main-padd
+    .character-card-expanded
+        border-radius: $card-border-radius
+        overflow: hidden
+        .character-info
+            display: flex
+            flex-wrap: wrap
+            margin-top: $sections-separation
+            .card-attributes
+                margin-top: $sections-separation
+@media (min-width: 600px)
+    .character-info
+        margin-bottom: $sections-separation
+        .card-img
+            width: $card-image-height
+        .card-attributes
+            margin-top: 0!important
+            width: calc(100% - $card-image-height)

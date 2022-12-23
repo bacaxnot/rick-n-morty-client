@@ -38,6 +38,10 @@ export default defineConfig({
                 find: '@styles',
                 replacement: path.resolve(__dirname, 'src/styles'),
             },
+            {
+                find: '@hooks',
+                replacement: path.resolve(__dirname, 'src/hooks'),
+            },
         ],
     },
     plugins: [react()],

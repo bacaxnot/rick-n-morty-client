@@ -1,24 +1,22 @@
 @import './_vars'
 $sections-separation: 10px
-.character-view
+.episode-view
     width: 100%
     padding: $app-main-padd
-    .character-card-expanded
+    .episode-card-expanded
         border-radius: $card-border-radius
         overflow: hidden
-        .character-info
+        .episode-info
             display: flex
             flex-wrap: wrap
             margin-top: $sections-separation
             .card-attributes
                 margin-top: $sections-separation
-        .card-list-section
-            padding: 0 40px
 @media (min-width: 600px)
-    .character-info
+    .episode-info
         margin-bottom: $sections-separation
-        .card-img
-            width: $card-image-height
         .card-attributes
             margin-top: 0!important
-            width: calc(100% - $card-image-height)
+            width: 50%
+        .card-list-section
+            width: 50%

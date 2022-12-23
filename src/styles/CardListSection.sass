@@ -1,0 +1,24 @@
+@import './_vars'
+
+$elements-separation: 24px
+
+.card-list-section
+    display: flex
+    flex-direction: column
+    gap: 10px
+    width: 100%
+    background-color: $character-card-color
+    .list-title
+        display: flex
+        justify-content: center
+        font-size: $card-title-font-size
+        color: $character-card-title-color
+    .list-container
+        display: flex
+        width: 100%
+        gap: 8px $elements-separation
+        padding: 0 calc( $elements-separation/2 )
+        flex-wrap: wrap
+        .list-element
+            font-size: $card-text-font-size
+            color: $character-card-text-color

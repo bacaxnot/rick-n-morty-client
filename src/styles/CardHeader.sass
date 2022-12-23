@@ -1,0 +1,25 @@
+@import './_vars'
+
+$max-height: 50px
+
+.card-header
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    min-height: $max-height
+    padding: 6px
+    background-color: $character-card-color
+    .card-title
+        color: $character-card-title-color
+        font-size: $card-title-font-size
+    .card-icon
+        display: flex
+        position: absolute
+        top: calc($max-height/2)
+        left: calc($max-height/2)
+        max-height: calc($max-height/2)
+        align-items: center
+        overflow: hidden
+        transform: translate(-50%,-50%)

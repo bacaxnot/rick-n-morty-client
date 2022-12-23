@@ -14,7 +14,10 @@
         align-items: center
         width: $navbar-height
         height: $navbar-height
-        padding: ($navbar-height - $navbar-logo-size)/2
+        padding:  calc(($navbar-height - $navbar-logo-size) / 2)
+        img:hover
+            filter: $black-to-white-filter
+            cursor: pointer
     .app-title
         position: relative
         width: 21rem

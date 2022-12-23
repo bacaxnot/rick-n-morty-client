@@ -1,0 +1,13 @@
+@import './_vars'
+
+.character-card
+    display: flex
+    flex-direction: column
+    max-width: $card-compressed-width
+    border-radius: $card-border-radius
+    overflow: hidden
+    .expanded
+        width: 100%
+    &:hover
+        cursor: pointer
+        box-shadow: 0px 0px 10px 8px $character-card-shadow
